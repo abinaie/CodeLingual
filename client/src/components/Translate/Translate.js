@@ -1,11 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 import LanguageDropdown from "../LanguageDropdown/LanguageDropdown";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExchangeAlt } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "@material-ui/core";
 import "./Translate.css";
 
-const Translate = () => {
+const Translate = (onButtonSubmit) => {//Amir onButtonSubmit
   return (
     <div className="translate-wrap">
       <h1 className="brand">CodeLingual</h1>
@@ -26,6 +26,7 @@ const Translate = () => {
             variant="contained"
             color="secondary"
             className="submit-button"
+            //onClick = {onButtonSubmit}//Amir ImageLinkForm
           >
             Submit
           </Button>
